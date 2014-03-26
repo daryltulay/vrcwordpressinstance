@@ -1,0 +1,11 @@
+<wpml-config>
+    <custom-types>
+		<custom-type translate="0">mg_grids</custom-type>
+		<custom-type translate="1">mg_items</custom-type>
+	</custom-types>  
+	<taxonomies>
+		<taxonomy translate="1">mg_item_categories</taxonomy>
+	</taxonomies>
+</wpml-config>
+
+
