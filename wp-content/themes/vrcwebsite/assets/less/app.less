@@ -1,0 +1,781 @@
+/*!
+ * Roots 6.5.1
+ */
+
+@import "bootstrap/bootstrap.less";
+
+/*** Design Services ***/
+li{
+	
+	padding-top: 5px;
+}
+.red{
+	color: #8c1a1c;
+}
+
+.padify{
+	padding-top: 22px;
+}
+
+.marginify{
+	margin-bottom: 50px;
+	
+}
+
+.bebasify{
+font-family: 'BebasNeueRegular', Arial, serif;
+}
+
+.linify{
+	text-decoration: underline;
+}
+
+
+
+.triangle-down-right2 {
+position: absolute;
+height: 0;
+padding-top: 15%;
+overflow: hidden;
+top: 800px;
+left: 919px;
+z-index: 5;
+}
+.triangle-down-right2:after {
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-top: -154px;
+border-top: 148px solid transparent;
+border-right: 221px solid #c3c3c4;
+}
+
+/*
+.covertriangle{
+position: absolute;
+height: 42px;
+float: left;
+width: 331px;
+background-color: #c3c3c4;
+top: 349px;
+left: -70px;
+z-index: 1;
+transform: rotate(30deg);
+-ms-transform: rotate(30deg);
+-webkit-transform: rotate(-34deg);
+}
+*/
+
+/*** Font-face ***/
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?iefix') format('eot'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#webfont4Bjy2lJe') format('svg');
+    font-weight: normal;
+}
+
+/* ==========================================================================
+   Enflatten
+   ========================================================================== */
+/* Flatten das boostrap */
+.well, .navbar-inner, .popover, .btn, .tooltip, input, select, textarea, pre, .progress, .modal, .add-on, .alert, .table-bordered, .nav>.active>a, .dropdown-menu, .tooltip-inner, .badge, .label, .img-polaroid,  {
+  -moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+	border-collapse: collapse !important;
+	background-image: none !important;
+}
+
+.take-all-space-you-can{
+    width:100%;
+}
+
+.jumbotron{
+	
+	border-radius: 0px !important;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+body {
+background-color: #c3c3c4;
+text-align: justify;
+}
+
+.container{
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'BebasNeueRegular', sans-serif;
+}
+
+.landbg {background: url('http://vrc.tulay.me/wp-content/uploads/2014/02/Intro-Bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+footer{
+	font-family: 'BebasNeueRegular';
+	font-size: 14px;
+	color: #b7b7b8;
+	letter-spacing: 1px;
+	height: 200px;
+	
+}
+
+
+.navbar-nav>li>a {
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+li > a:hover {
+    color: black;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.banner { }
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content { }
+
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info { }
+
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (min-width: @screen-sm-min) { }
+
+@media (min-width: @screen-md-min) {
+.navbar-nav{
+    float:none;
+    margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        font: 900;} 
+    
+    	.navbar{
+	    	padding: 0px
+    	}
+    	
+ }
+@media (min-width: @screen-lg-min) { }
+
+//start of custom css
+.container {
+   max-width: none !important;
+   width: 970px;
+}
+//subpage container
+.subpage-container { 
+height:510px;
+}
+.darkify{
+	background-color: #363638;
+}
+//btn primary override
+.btn-primary {
+background-color: transparent;
+border-color: #fff;
+}
+.btn-primary:hover{
+background-color: #dd2b46;	
+}
+//link color override
+a {
+color: #fff;
+}
+//tab nav override
+ .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+color: #fff;
+background-color: #8c0407;
+border: 2px solid #8c0407;
+border-bottom-color: transparent;
+cursor: pointer;
+padding-left: 90px;
+padding-right: 90px;
+}
+
+.nav-tabs>li>a {
+line-height: 1.428571429;
+border: 1px solid transparent;
+border-radius: 0;
+font-family: BebasNeueRegular;
+font-size: 27px;
+letter-spacing: 2px;
+padding-left: 90px;
+padding-right: 90px;
+}
+
+li {
+padding-top: 0px;
+}
+
+//list text fix
+.listify{
+	text-align: left;
+font-size: 12px;
+}
+#listings{
+	line-height: 18px;
+margin-bottom: 20px;
+}
+//about us blockquote override
+blockquote {
+margin: -12px 0 21px 0;
+font-size: 16px;
+font-style: italic;
+font-weight: 100;
+padding: initial;
+border: initial;
+}
+//about us container
+#about-us{
+	background-color: #fff;
+	line-height: 26px;
+}
+
+///////about us/////////
+//about first photo
+.about1-photo{
+	padding-left: 0px;
+	background-image: url('../img/about/1.jpg'); 
+	height: 440px;
+	background-repeat: no-repeat; 
+	left:15px; 
+	top: 75px;
+}
+//about first photo up
+.angle1-white-up {
+    width: 0;
+height: 0;
+padding-bottom: 82%;
+padding-left: 111%;
+overflow: hidden;
+}
+.angle1-white-up:after {
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-left: -536px;
+border-bottom: 364px solid transparent;
+border-left: 537px solid #fff;
+}
+//about first photo down
+.angle1-white-down {
+position: absolute;
+width: 91%;
+height: 0;
+padding-top: 67%;
+overflow: hidden;
+top: 65.6%;
+left: 0px;
+}
+.angle1-white-down:after{
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-top: -433px;
+border-top: 432px solid transparent;
+border-right: 641px solid #fff;	
+}
+
+//about second photo
+.about2-photo{padding-left: 0px;
+background-image: url('../img/about/2.jpg');
+height: 350px;
+background-repeat: no-repeat;
+top: -15px;
+left: 8px;}
+//about second photo up
+.angle2-white-up {
+/* width: 0; */
+height: 0;
+padding-bottom: 82%;
+padding-left: 97%;
+overflow: hidden;
+}
+.angle2-white-up:after {
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-left: -537px;
+border-bottom: 364px solid transparent;
+border-left: 537px solid #fff;
+}
+//about second photo down
+.angle2-white-down {
+position: absolute;
+width: 92%;
+height: 0;
+padding-top: 67%;
+overflow: hidden;
+top: 56.6%;
+left: -4px;
+}
+.angle2-white-down:after{
+	content: "";
+display: block;
+width: 0;
+height: 0;
+margin-top: -432px;
+border-top: 432px solid transparent;
+border-right: 641px solid #FFFFFF;
+}
+
+//about third photo
+.about3-photo{
+padding-left: 0px;
+background-image: url('../img/about/3.jpg');
+height: 350px;
+background-repeat: no-repeat;
+left: 15px;
+top: 20px;
+}
+//about third photo up
+.angle3-white-up {
+/* width: 0; */
+height: 0;
+padding-bottom: 82%;
+padding-left: 97%;
+overflow: hidden;
+}
+.angle3-white-up:after {
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-left: -537px;
+border-bottom: 364px solid transparent;
+border-left: 537px solid #fff;
+}
+//about third photo down
+.angle3-white-down {
+position: absolute;
+width: 92%;
+height: 0;
+padding-top: 67%;
+overflow: hidden;
+top: 56.6%;
+}
+.angle3-white-down:after{
+	content: "";
+display: block;
+width: 0;
+height: 0;
+margin-top: -432px;
+border-top: 432px solid transparent;
+border-right: 641px solid #FFFFFF;
+}
+//about us nav tab override
+.redify{
+margin-bottom: 10px;
+margin-top: 40px;
+background-color: #b10f12;
+border-bottom: 11px solid #8c0407;	
+	
+}
+///////about owner/////////
+//about first photo
+.owner-photo{
+	padding-left: 0px;
+	background-image: url('../img/about/owner.jpg'); 
+	height: 440px;
+	background-repeat: no-repeat; 
+	left:15px; 
+	top: 75px;
+}
+//about first photo up
+.owner-white-up {
+    width: 0;
+height: 0;
+padding-bottom: 82%;
+padding-left: 97%;
+overflow: hidden;
+}
+.owner-white-up:after {
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-left: -536px;
+border-bottom: 364px solid transparent;
+border-left: 537px solid #fff;
+}
+//about first photo down
+.owner-white-down {
+position: absolute;
+width: 91%;
+height: 0;
+padding-top: 67%;
+overflow: hidden;
+top: 65.6%;
+left: 0px;
+}
+.owner-white-down:after{
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-top: -433px;
+border-top: 432px solid transparent;
+border-right: 641px solid #fff;	
+}
+
+///////design services page/////////
+.services{
+padding-left: 0px; 
+background-image: url('../img/design/design-services-photo.jpg'); 
+height: 440px; 
+background-repeat: no-repeat;
+}
+
+//services triagles
+.services-photo{
+	padding-left: 0px;
+	background-image: url('../img/design/design-services-photo.jpg'); 
+	height: 440px;
+	background-repeat: no-repeat; 
+	left:15px;
+}
+.services-grey-up {
+    width: 0;
+height: 0;
+padding-bottom: 82%;
+padding-left: 97%;
+overflow: hidden;
+}
+.services-grey-up:after {
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-left: -536px;
+border-bottom: 364px solid transparent;
+border-left: 537px solid #c3c3c4;
+}
+
+.services-white-down {
+position: absolute;
+width: 91%;
+height: 0;
+padding-top: 67%;
+overflow: hidden;
+top: 65.6%;
+left: 0px;
+}
+.services-white-down:after{
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-top: -433px;
+border-top: 432px solid transparent;
+border-right: 641px solid #fff;	
+}
+
+.services-grey-down {
+position: relative;
+width: 22%;
+height: 0;
+padding-top: 234px;
+overflow: hidden;
+margin-left: 734px;
+}
+
+.services-grey-down:after {
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-top: -432px;
+border-top: 432px solid transparent;
+border-right: 641px solid #c3c3c4;
+}
+
+.services-pad{
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+
+/////// menu affix
+
+.affix {
+position: fixed;
+z-index: 4;
+top: 0;
+background-color: #363638;
+width: 940px !important;
+}
+// menu skew
+/*
+ul#menu-primary-navigation:hover{
+-webkit-transform: skew(-10deg);
+-moz-transform: skew(-10deg);
+-ms-transform: skew(-10deg);
+transform: skew(-10deg);
+}
+*/
+nav ul{
+  list-style:none;
+}
+
+nav li {
+  display:inline-block;
+  text-align:center;
+
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg); 
+
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -ms-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+nav li a {
+  display:block;
+  text-decoration:none;
+  padding:5px 10px;
+  font-family: 'BebasNeueRegular',serif;
+  color:#fff;
+  -webkit-transform: skew(20deg) !important;
+  -moz-transform: skew(20deg) !important;
+  -ms-transform: skew(20deg) !important;
+  -o-transform: skew(20deg) !important;
+  transform: skew(20deg) !important; 
+}
+
+
+li a:hover{
+	color: #f4f4f4;
+	}
+nav li:hover{
+  background:#fff;
+}
+nav li:hover a {
+  color:#222;
+}
+
+ul#menu-footernav {
+font-size: 14px;
+}
+ul#menu-primary-navigation{
+font-size: 20px;
+}
+
+ul#about-tabnav.nav-tabs>li>a:hover{
+
+background: #fff;
+color: #222;
+}
+
+ul#about-tabnav.nav-tabs>li>a{
+
+color: #fff;
+}
+////////contactus
+.covertriangle {
+position: absolute;
+height: 34px;
+float: left;
+width: 331px;
+background-color: #c3c3c4;
+top: 384px;
+left: -81px;
+z-index: 1;
+transform: rotate(30deg);
+-ms-transform: rotate(30deg);
+-webkit-transform: rotate(-30deg);
+}
+
+.straightlineft {
+position: absolute;
+height: 32px;
+float: left;
+width: 753px;
+background-color: #c3c3c4;
+top: 305px;
+left: -25px;
+z-index: 1;
+}
+
+//triangledownwhite
+.triangledownbg{
+padding-left: 0px; 
+background-image: url('../img/contact/contact-us-1.jpg'); 
+height: 340px;
+background-repeat: no-repeat;
+}
+
+.triangle-down-right {
+position: absolute;
+width: 92%;
+height: 0;
+padding-top: 78%;
+overflow: hidden;
+top: 54.6%;
+left: -2px;
+}
+.triangle-down-right:after {
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-top: -455px;
+border-top: 432px solid transparent;
+border-right: 935px solid #FFFFFF;
+}
+
+
+////triangleup
+.trianglebg{
+	padding-left: 0px;
+	background-image: url('../img/contact/contact-us-2.jpg'); 
+	height: 340px; 
+	background-repeat: no-repeat;
+}
+.triangle-up-left {
+width: 0;
+height: 0;
+padding-bottom: 58%;
+padding-left: 96%;
+overflow: hidden;
+}
+
+.triangle-up-left:after {
+content: "";
+display: block;
+width: 0;
+height: 0;
+margin-left: -500px;
+border-bottom: 303px solid transparent;
+border-left: 501px solid #C1C3C5;
+}
+
+address {
+text-transform: uppercase;
+}
+
+.modal-content{
+background-color: rgba(19, 19, 19, 0.87);
+color: wheat;
+}
+//carousel
+.carousel-caption{
+text-align: left;
+left: 4%;
+top: -20px;
+}
+.carousel-indicators{
+margin-left: -14%;
+text-align: right;
+}
+
+#villegasCarouselh1{
+font-size: 53px;
+line-height: 47px;
+}
+
+.container-projects {
+display: inline-grid;
+max-width: none !important;
+width: 970px;
+margin-right: auto;
+margin-left: auto;
+padding-left: 15px;
+padding-right: 15px;
+content: " ";
+}
+
+.projects-fix{
+background-color: #fff;
+padding-top: 30px;
+padding-bottom: 30px;
+margin-bottom: 30px;
+}
+
+.bottom{
+	margin-bottom: 30px;
+}
+
+.align-left{
+	text-align: left;
+}
+
+
